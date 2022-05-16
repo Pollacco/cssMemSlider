@@ -109,6 +109,14 @@ nav {
     margin-left: -300%;
 }
 
+#first:checked ~ .slider .slider_description nav .nav_item:nth-child(1),
+#second:checked ~ .slider .slider_description nav .nav_item:nth-child(2),
+#third:checked ~ .slider .slider_description nav .nav_item:nth-child(3),
+#fourth:checked ~ .slider .slider_description nav .nav_item:nth-child(4) {
+    border: solid 3px violet;
+    background: transparent;
+}
+
 @media (max-width: 420px) {
     
     .wrapper {
