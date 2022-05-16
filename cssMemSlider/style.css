@@ -13,19 +13,26 @@ body {
 }
 
 .wrapper {
-    max-height: 90vh;
+    max-height: 80vh;
     padding: 5%;
     background-color: grey;
 }
 
-.slider_list {
-    display: flex;
-    border-radius: 15px;
+.slider {
     overflow: hidden;
+    border-radius: 15px;
+    width: calc(100%);
+    height: calc(60%);
+}
+
+.slider_list {
+    width: calc(100% * 4);
+    height: 100%;
+    display: flex;
 }
 
 .slider_list img {
-    width: 100%;
+    width: calc(100% / 4);
     height: 100%;
 }
 
