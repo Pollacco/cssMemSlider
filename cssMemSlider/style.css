@@ -68,3 +68,23 @@ nav {
 p {
     font-size: 22px;
 }
+
+.control {
+    display: none;
+}
+
+#first:checked ~ .slider .slider_list {
+    margin-left: 0;
+}
+
+#second:checked ~ .slider .slider_list {
+    margin-left: -100%;
+}
+
+#third:checked ~ .slider .slider_list {
+    margin-left: -200%;
+}
+
+#fourth:checked ~ .slider .slider_list {
+    margin-left: -300%;
+} 
