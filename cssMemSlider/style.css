@@ -13,7 +13,8 @@ body {
 }
 
 .wrapper {
-    max-height: 80vh;
+    max-height: calc(65%);
+    max-width: calc(65%);
     padding: 5%;
     background-color: grey;
 }
@@ -29,6 +30,7 @@ body {
     width: calc(100% * 4);
     height: 100%;
     display: flex;
+    transition: all 0.7s ease;
 }
 
 .slider_list img {
@@ -36,11 +38,28 @@ body {
     height: 100%;
 }
 
-.slider_descroption {
+.slider_description {
     margin-top: 1rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
+
+.container {
+    overflow: hidden;
+    width: calc(80%);
+}
+
+.memes {
+    width: calc(100% * 4);
+    display: flex;
+    transition: all 0.7s ease;
+    height: 100%;
+}
+
+.text {
+    width: calc(100% / 4);
+    font-size: 22px;
 }
 
 nav {
@@ -56,6 +75,7 @@ nav {
     background-color: violet;
     border-radius: 50%;
     opacity: 0.7;
+    transition: all 0.4s ease;
 }
 
 .nav_item:hover {
@@ -65,26 +85,26 @@ nav {
     cursor: pointer;
 }
 
-p {
-    font-size: 22px;
-}
-
 .control {
     display: none;
 }
 
-#first:checked ~ .slider .slider_list {
+#first:checked ~ .slider .slider_list,
+#first:checked ~ .slider .slider_description .container .memes {
     margin-left: 0;
 }
 
-#second:checked ~ .slider .slider_list {
+#second:checked ~ .slider .slider_list,
+#second:checked ~ .slider .slider_description .container .memes {
     margin-left: -100%;
 }
 
-#third:checked ~ .slider .slider_list {
+#third:checked ~ .slider .slider_list,
+#third:checked ~ .slider .slider_description .container .memes {
     margin-left: -200%;
 }
 
-#fourth:checked ~ .slider .slider_list {
+#fourth:checked ~ .slider .slider_list,
+#fourth:checked ~ .slider .slider_description .container .memes {
     margin-left: -300%;
-} 
+}
