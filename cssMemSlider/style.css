@@ -21,7 +21,7 @@ body {
 
 .slider {
     overflow: hidden;
-    border-radius: 15px;
+    border-radius: 1rem;
     width: calc(100%);
     height: calc(60%);
 }
@@ -59,7 +59,7 @@ body {
 
 .text {
     width: calc(100% / 4);
-    font-size: 22px;
+    font-size: 1.5rem;
 }
 
 nav {
@@ -72,7 +72,7 @@ nav {
 .nav_item {
     width: 0.7rem;
     height: 0.7rem;
-    border: solid 3px purple;
+    border: solid 0.2rem purple;
     background-color: violet;
     border-radius: 50%;
     opacity: 0.7;
@@ -127,7 +127,7 @@ nav {
 #second:checked ~ .slider .slider_description nav .nav_item:nth-child(2),
 #third:checked ~ .slider .slider_description nav .nav_item:nth-child(3),
 #fourth:checked ~ .slider .slider_description nav .nav_item:nth-child(4) {
-    border: solid 3px violet;
+    border: solid 0.2rem violet;
     background: transparent;
 }
 
@@ -151,7 +151,7 @@ nav {
     }
 
     .text {
-        font-size: 16px;
+        font-size: 1rem;
     }
 
   }
