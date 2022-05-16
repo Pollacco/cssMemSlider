@@ -108,3 +108,28 @@ nav {
 #fourth:checked ~ .slider .slider_description .container .memes {
     margin-left: -300%;
 }
+
+@media (max-width: 420px) {
+    
+    .wrapper {
+        max-height: calc(90%);
+        max-width: calc(90%);
+        padding: 3%;
+    }
+  
+    .slider_description {
+      flex-direction: column-reverse;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .container {
+        margin-top: 1rem;
+
+    }
+
+    .text {
+        font-size: 16px;
+    }
+
+  }
